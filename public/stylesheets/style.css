@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  background-color: #DFECF0;
+  font-family: 'Share Tech Mono', monospace;
+  list-style: none;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #747B7D;
+  font-weight: bold;
+  transition: color .1s;
+}
+
+a span .title {
+  background-color:#333;
+  color: #DFECF0;
+}
+
+a:hover {
+  color: #409AB3;
+}
+
+button {
+  background-color: #747B7D;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color .1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #409AB3;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+textarea, input {
+  padding: .5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #409AB3;
+}
+
+textarea {
+  min-width: 40%;
+  min-height: 100px;
+}
+
+form > div {
+  margin-bottom: 2%;
+}
+
+form label {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+}
+
+header h1 {
+  font-size: 1.75em;
+}
+
+main {
+  flex: 1;
+  padding: 2% 4%;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #747B7D;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  margin-left: 16px;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: #409AB3;
+}
+
+.delete-post-btn {
+  background-color: #d41414;
+}
+
+.delete-post-btn:hover {
+  background-color: #ff643d;
+}
+
+.post {
+  margin-bottom: 2%;
+  line-height: 150%;
+  border: .1rem solid #333;
+  box-shadow: 5px 5px #6B6F73;
+  padding: .5rem;
+}
+
+.post:nth-child(odd){
+  box-shadow: 5px 5px #1368AA;
+}
+
+.post .title span {
+  font-style: italic;
+  font-size: 90%;
+  color: #7d7d7d;
+}
+
+.edit-link {
+  display: block;
+  margin: 2% 0 2% 0;
+}
+
+.upvote-btn {
+  background-color: #197d0f;
+  transition: background-color .1s;
+}
+
+.upvote-btn:hover {
+  background-color: #1f9c13;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment {
+  padding: 1%;
+  margin-bottom: 3%;
+  border: .1rem solid #333;
+  box-shadow: 5px 5px #6B6F73;
+  padding: .5rem;
+}
+
+.comment:nth-child(odd) {
+  box-shadow: 5px 5px #1368AA;
+}
+
+.comment .meta {
+  font-size: 90%;
+  margin-bottom: .5%;
+  opacity: .6;
+}
+
+.new-post-form input {
+  width: 300px;
+}
+
+.edit-post-form {
+  margin-bottom: 5%;
+}
+
+
+
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}

@@ -1,4 +1,5 @@
-# Tech Share
+# Tech Share 
+[Tech-Share](https://techshare-vs.herokuapp.com/)
 
 ## Application Description
 A tech blog website that allows the user to create an account, sign in, and comment on existing posts. The user can sign in to create a post with the option to include a url to a relevant website or article. The user session is currently set to expire after five minutes.

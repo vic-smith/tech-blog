@@ -4,13 +4,14 @@ module.exports = {
       date
     ).getDate()}/${new Date(date).getFullYear()}`;
   },
-
+// format comments plurals
   format_plural: (word, amount) => {
     if (amount !== 1) {
       return `${word}s`;
     }
     return word;
   },
+  // formats post_url 
   format_url: (url) => {
     return url
       .replace("http://", "")

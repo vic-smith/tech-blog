@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+//GET one user by id
 router.get("/:id", (req, res) => {
   User.findOne({
     attributes: { exclude: ["password"] },
@@ -46,7 +46,7 @@ router.get("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Create a new user
 router.post("/", (req, res) => {
   User.create({
     username: req.body.username,
@@ -67,7 +67,7 @@ router.post("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Input username and password for login
 router.post("/login", (req, res) => {
   User.findOne({
     where: {
@@ -95,7 +95,7 @@ router.post("/login", (req, res) => {
     });
   });
 });
-
+// logout user
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -105,7 +105,7 @@ router.post("/logout", (req, res) => {
     res.status(404).end();
   }
 });
-
+// User update
 router.put("/:id", (req, res) => {
   User.update(req.body, {
     individualHooks: true,
@@ -125,7 +125,7 @@ router.put("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Delete user
 router.delete("/:id", (req, res) => {
   User.destroy({
     where: {

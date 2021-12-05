@@ -4,7 +4,7 @@ async function newFormHandler(event) {
   const title = document.querySelector('input[name="post-title"]').value;
   const context = document.querySelector('input[name="context"]').value;
   const post_url = document.querySelector('input[name="post-url"]').value;
-
+// create new post
   const response = await fetch(`/api/posts`, {
     method: "POST",
     body: JSON.stringify({

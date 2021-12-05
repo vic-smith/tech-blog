@@ -28,7 +28,7 @@ router.get("/", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// GET one post by id
 router.get("/:id", (req, res) => {
   Post.findOne({
     where: {
@@ -62,9 +62,8 @@ router.get("/:id", (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// Create a new post
 router.post("/", withAuth, (req, res) => {
-  // expects {title: 'Taskmaster goes public!', post_url: 'https://taskmaster.com/press', user_id: 1}
   Post.create({
     title: req.body.title,
     context: req.body.context,
@@ -77,7 +76,7 @@ router.post("/", withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// UPDATE post title
 router.put("/:id", withAuth, (req, res) => {
   Post.update(
     {
@@ -101,7 +100,7 @@ router.put("/:id", withAuth, (req, res) => {
       res.status(500).json(err);
     });
 });
-
+// DELETE post
 router.delete("/:id", withAuth, (req, res) => {
   console.log("id", req.params.id);
   Post.destroy({

@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  background-color: #dfecf0;
+  background-color: #E9E9F2;
   font-family: "Share Tech Mono", monospace;
   list-style: none;
 }
@@ -135,10 +135,6 @@ main {
   padding: 0.5rem;
 }
 
-.post:nth-child(odd) {
-  box-shadow: 5px 5px #1368aa;
-}
-
 .post .title span {
   font-size: 110%;
   color: #333;
@@ -149,14 +145,7 @@ main {
   margin: 2% 0 2% 0;
 }
 
-.upvote-btn {
-  background-color: #197d0f;
-  transition: background-color 0.1s;
-}
 
-.upvote-btn:hover {
-  background-color: #1f9c13;
-}
 
 .comment-form {
   margin-bottom: 5%;
@@ -170,8 +159,12 @@ main {
   padding: 0.5rem;
 }
 
-.comment:nth-child(odd) {
+.comment:nth-child(even) {
   box-shadow: 5px 5px #1368aa;
+}
+
+.comment:nth-child(odd) {
+  box-shadow: 5px 5px #072c47;
 }
 
 .comment .meta {

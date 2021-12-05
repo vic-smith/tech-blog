@@ -145,7 +145,12 @@ main {
   margin: 2% 0 2% 0;
 }
 
-
+.head-list {
+  text-align: center;
+}
+.head {
+  font-weight: bold;
+}
 
 .comment-form {
   margin-bottom: 5%;

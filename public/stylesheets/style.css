@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
-  background-color: #DFECF0;
-  font-family: 'Share Tech Mono', monospace;
+  background-color: #dfecf0;
+  font-family: "Share Tech Mono", monospace;
   list-style: none;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -14,33 +15,33 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #747B7D;
+  color: #747b7d;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
 }
 
 a span .title {
-  background-color:#333;
-  color: #DFECF0;
+  background-color: #333;
+  color: #dfecf0;
 }
 
 a:hover {
-  color: #409AB3;
+  color: #409ab3;
 }
 
 button {
-  background-color: #747B7D;
+  background-color: #747b7d;
   border: 0;
   padding: 1%;
   color: white;
   font-weight: bold;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
   cursor: pointer;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #409AB3;
+  background-color: #409ab3;
 }
 
 .post-list {
@@ -48,15 +49,17 @@ button:hover {
   padding: 0;
 }
 
-textarea, input {
-  padding: .5%;
+textarea,
+input {
+  padding: 0.5%;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
-  border: 1px solid #409AB3;
+  border: 1px solid #409ab3;
 }
 
 textarea {
@@ -104,16 +107,16 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #747B7D;
+  color: #747b7d;
   font-size: 100%;
   font-weight: bold;
-  transition: color .1s;
+  transition: color 0.1s;
   margin-left: 16px;
 }
 
 .btn-no-style:hover {
   background: none;
-  color: #409AB3;
+  color: #409ab3;
 }
 
 .delete-post-btn {
@@ -127,19 +130,18 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
-  border: .1rem solid #333;
-  box-shadow: 5px 5px #6B6F73;
-  padding: .5rem;
+  border: 0.1rem solid #333;
+  box-shadow: 5px 5px #6b6f73;
+  padding: 0.5rem;
 }
 
-.post:nth-child(odd){
-  box-shadow: 5px 5px #1368AA;
+.post:nth-child(odd) {
+  box-shadow: 5px 5px #1368aa;
 }
 
 .post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
+  font-size: 110%;
+  color: #333;
 }
 
 .edit-link {
@@ -149,7 +151,7 @@ main {
 
 .upvote-btn {
   background-color: #197d0f;
-  transition: background-color .1s;
+  transition: background-color 0.1s;
 }
 
 .upvote-btn:hover {
@@ -163,19 +165,19 @@ main {
 .comment {
   padding: 1%;
   margin-bottom: 3%;
-  border: .1rem solid #333;
-  box-shadow: 5px 5px #6B6F73;
-  padding: .5rem;
+  border: 0.1rem solid #333;
+  box-shadow: 5px 5px #6b6f73;
+  padding: 0.5rem;
 }
 
 .comment:nth-child(odd) {
-  box-shadow: 5px 5px #1368AA;
+  box-shadow: 5px 5px #1368aa;
 }
 
 .comment .meta {
   font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
+  margin-bottom: 0.5%;
+  opacity: 0.6;
 }
 
 .new-post-form input {
@@ -186,7 +188,13 @@ main {
   margin-bottom: 5%;
 }
 
+.post-title {
+  font-weight: bold;
+}
 
+.content {
+  color: #042841;
+}
 
 footer {
   border-top: 1px solid #ccc;
